@@ -30,6 +30,7 @@ export async function POST(request: Request) {
     const action = body.action || 'toggle';
 
     const rootDir = path.resolve(process.cwd(), '..');
+    const botScriptPath = path.resolve(rootDir, 'index.js');
 
     if (action === 'start') {
       if (isProcessAlive(globalThis.botChildProcess)) {
@@ -41,7 +42,7 @@ export async function POST(request: Request) {
       }
 
       // Spawn real bot process
-      const child = spawn('node', ['index.js'], {
+      const child = spawn('node', [botScriptPath], {
         cwd: rootDir,
         stdio: 'ignore',
         detached: false,
@@ -110,7 +111,7 @@ export async function POST(request: Request) {
         });
       } else {
         // Start it
-        const child = spawn('node', ['index.js'], {
+        const child = spawn('node', [botScriptPath], {
           cwd: rootDir,
           stdio: 'ignore',
           detached: false,
