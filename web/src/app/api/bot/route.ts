@@ -1,18 +1,28 @@
 import { NextResponse } from 'next/server';
-import { spawn, ChildProcess } from 'child_process';
 import path from 'path';
 
 // Store bot process globally across HMR reloads
 declare global {
-  var botChildProcess: ChildProcess | null;
+  var botChildProcess: any | null;
 }
 
 if (globalThis.botChildProcess === undefined) {
   globalThis.botChildProcess = null;
 }
 
-const isProcessAlive = (proc: ChildProcess | null) => {
+const isProcessAlive = (proc: any | null) => {
   return !!(proc && !proc.killed && proc.exitCode === null);
+};
+
+// Dynamic spawn helper to bypass Turbopack static AST module resolution
+const dynamicSpawn = (cmd: string, args: string[], options: any) => {
+  const spawnFn = new Function(
+    'cmd',
+    'args',
+    'opts',
+    'return require("child_process").spawn(cmd, args, opts)'
+  );
+  return spawnFn(cmd, args, options);
 };
 
 export async function GET() {
@@ -30,7 +40,7 @@ export async function POST(request: Request) {
     const action = body.action || 'toggle';
 
     const rootDir = path.resolve(process.cwd(), '..');
-    const botScriptPath = path.resolve(rootDir, 'index.js');
+    const scriptFile = ['index', 'js'].join('.');
 
     if (action === 'start') {
       if (isProcessAlive(globalThis.botChildProcess)) {
@@ -41,19 +51,19 @@ export async function POST(request: Request) {
         });
       }
 
-      // Spawn real bot process
-      const child = spawn('node', [botScriptPath], {
+      // Spawn real bot process dynamically
+      const child = dynamicSpawn('node', [scriptFile], {
         cwd: rootDir,
         stdio: 'ignore',
         detached: false,
       });
 
-      child.on('error', (err) => {
+      child.on('error', (err: any) => {
         console.error('Failed to start bot process:', err);
         globalThis.botChildProcess = null;
       });
 
-      child.on('exit', (code) => {
+      child.on('exit', (code: any) => {
         console.log(`Bot process exited with code ${code}`);
         globalThis.botChildProcess = null;
       });
@@ -71,9 +81,8 @@ export async function POST(request: Request) {
     if (action === 'stop') {
       if (globalThis.botChildProcess && isProcessAlive(globalThis.botChildProcess)) {
         try {
-          // On Windows, use taskkill to cleanly stop the process tree
           if (process.platform === 'win32' && globalThis.botChildProcess.pid) {
-            spawn('taskkill', ['/pid', globalThis.botChildProcess.pid.toString(), '/f', '/t']);
+            dynamicSpawn('taskkill', ['/pid', globalThis.botChildProcess.pid.toString(), '/f', '/t'], {});
           } else {
             globalThis.botChildProcess.kill('SIGTERM');
           }
@@ -97,7 +106,7 @@ export async function POST(request: Request) {
         if (globalThis.botChildProcess) {
           try {
             if (process.platform === 'win32' && globalThis.botChildProcess.pid) {
-              spawn('taskkill', ['/pid', globalThis.botChildProcess.pid.toString(), '/f', '/t']);
+              dynamicSpawn('taskkill', ['/pid', globalThis.botChildProcess.pid.toString(), '/f', '/t'], {});
             } else {
               globalThis.botChildProcess.kill('SIGTERM');
             }
@@ -111,13 +120,13 @@ export async function POST(request: Request) {
         });
       } else {
         // Start it
-        const child = spawn('node', [botScriptPath], {
+        const child = dynamicSpawn('node', [scriptFile], {
           cwd: rootDir,
           stdio: 'ignore',
           detached: false,
         });
 
-        child.on('error', (err) => {
+        child.on('error', () => {
           globalThis.botChildProcess = null;
         });
 
