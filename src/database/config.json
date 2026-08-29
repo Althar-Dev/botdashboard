@@ -1,0 +1,19 @@
+{
+  "bot": {
+    "token": "8865279122:AAF0oElDCIDsUGjs0Keb0R2PwhXNCg10wuM",
+    "licenseKey": "althar_8xrxubttcdcph2eldvm18",
+    "adminId": [
+      8573485920,
+      439502551
+    ],
+    "channel": "@TestimoniTos",
+    "shopName": "AltharDev",
+    "btnCtr": 2,
+    "btnPrd": 4,
+    "digit": 0
+  },
+  "svalepay": {
+    "business_id": "SVP-MINGST7",
+    "secret_key": "svp_vpfx0pto8ecuths77drjaq"
+  }
+}

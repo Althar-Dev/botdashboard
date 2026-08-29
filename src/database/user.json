@@ -1,0 +1,81 @@
+[
+  {
+    "id": 8573485920,
+    "username": "AltharDev",
+    "createdAt": "2026-08-25T16:59:26.387Z",
+    "transaksi": 8,
+    "saldo": 9900,
+    "order": [
+      {
+        "id": "TRX-S99MACAK",
+        "product": "CapCut Pro",
+        "price": 10,
+        "method": "saldo",
+        "data": "akun4",
+        "status": "success",
+        "date": "2026-08-25T17:01:46.309Z"
+      },
+      {
+        "id": "TRX-XAZBT8H3",
+        "product": "CapCut Pro",
+        "price": 10,
+        "method": "saldo",
+        "data": "akun5",
+        "status": "success",
+        "date": "2026-08-25T17:06:27.690Z"
+      },
+      {
+        "id": "TRX-ABTC5XQH",
+        "product": "CapCut Pro",
+        "price": 10,
+        "method": "saldo",
+        "data": "akun6",
+        "status": "success",
+        "date": "2026-08-25T17:46:54.470Z"
+      },
+      {
+        "id": "TRX-H5CY8L6N",
+        "product": "CapCut Pro",
+        "price": 10,
+        "method": "saldo",
+        "data": "akun7",
+        "status": "success",
+        "date": "2026-08-25T18:14:01.333Z"
+      },
+      {
+        "id": "TRX-8USN9MAG",
+        "product": "CapCut Pro (2x)",
+        "price": 20,
+        "method": "saldo",
+        "data": "1. akun8\n2. akun9",
+        "status": "success",
+        "date": "2026-08-25T18:57:48.585Z"
+      },
+      {
+        "id": "TRX-HCW6Y9GC",
+        "product": "CapCut Pro (2x)",
+        "price": 20,
+        "method": "saldo",
+        "data": "1. akun1\n2. akun2",
+        "status": "success",
+        "date": "2026-08-25T19:02:29.010Z"
+      },
+      {
+        "id": "TRX-M8104NEZ",
+        "product": "CapCut Pro (2x)",
+        "price": 20,
+        "method": "saldo",
+        "data": "1. akun3\n2. akun4",
+        "status": "success",
+        "date": "2026-08-25T19:05:32.142Z"
+      }
+    ]
+  },
+  {
+    "id": 439502551,
+    "username": "shivam_singh_005",
+    "createdAt": "2026-08-29T03:10:44.770Z",
+    "transaksi": 0,
+    "saldo": 0
+  }
+]

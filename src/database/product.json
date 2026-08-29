@@ -1,0 +1,186 @@
+[
+  {
+    "id": "cc",
+    "name": "CapCut",
+    "icon": "capcut",
+    "items": [
+      {
+        "id": "cc_pro",
+        "name": "CapCut Pro",
+        "price": 10,
+        "description": "Capcut pro",
+        "stock": [
+          "akun5",
+          "akun6",
+          "akun7",
+          "akun8",
+          "akun9",
+          "akun10",
+          "akun11",
+          "akun12",
+          "akun13",
+          "akun14",
+          "akun15",
+          "akun16",
+          "akun17",
+          "akun18",
+          "akun19",
+          "akun20"
+        ],
+        "icon": "capcut"
+      }
+    ]
+  },
+  {
+    "id": "am",
+    "name": "Alight Motion",
+    "icon": "alightm",
+    "items": [
+      {
+        "id": "am_pro",
+        "name": "Alight Motion Pro",
+        "price": 2000,
+        "description": "Am Pro",
+        "stock": [
+          "akun10"
+        ],
+        "icon": "alightm"
+      }
+    ]
+  },
+  {
+    "id": "duo",
+    "name": "Duolingo",
+    "icon": "duolingo",
+    "items": [
+      {
+        "id": "duo_pro",
+        "name": "Duolingo Super",
+        "price": 20,
+        "description": "Duolingo",
+        "stock": [],
+        "icon": "duolingo"
+      }
+    ]
+  },
+  {
+    "id": "cnv",
+    "name": "Canva",
+    "icon": "canva",
+    "items": [
+      {
+        "id": "cnv_pro",
+        "name": "Canva Pro",
+        "price": 20,
+        "description": "Canva Pro",
+        "stock": [],
+        "icon": "canva"
+      }
+    ]
+  },
+  {
+    "id": "vdo",
+    "name": "Vidio",
+    "icon": "vidio",
+    "items": [
+      {
+        "id": "vdo_pro",
+        "name": "Vidio Platinum",
+        "price": 20,
+        "description": "Vidio",
+        "stock": [],
+        "icon": "vidio"
+      }
+    ]
+  },
+  {
+    "id": "cgpt",
+    "name": "ChatGPT",
+    "icon": "chatgpt",
+    "items": [
+      {
+        "id": "cgpt_pro",
+        "name": "ChatGPT Plus",
+        "price": 20,
+        "description": "ChatGPT Plus",
+        "stock": [],
+        "icon": "chatgpt"
+      }
+    ]
+  },
+  {
+    "id": "spy",
+    "name": "Spotify",
+    "icon": "spotify",
+    "items": [
+      {
+        "id": "spy_pro",
+        "name": "Spotify Premium",
+        "price": 20,
+        "description": "Spotify",
+        "stock": [],
+        "icon": "spotify"
+      }
+    ]
+  },
+  {
+    "id": "grok",
+    "name": "Grok",
+    "icon": "grok",
+    "items": [
+      {
+        "id": "grok_pro",
+        "name": "Grok Premium",
+        "price": 20,
+        "description": "Grok",
+        "stock": [],
+        "icon": "grok"
+      }
+    ]
+  },
+  {
+    "id": "zom",
+    "name": "Zoom",
+    "icon": "zoom",
+    "items": [
+      {
+        "id": "zom_pro",
+        "name": "Zoom Pro",
+        "price": 20,
+        "description": "Zoom Pro",
+        "stock": [],
+        "icon": "zoom"
+      }
+    ]
+  },
+  {
+    "id": "yt",
+    "name": "YouTube",
+    "icon": "youtube",
+    "items": [
+      {
+        "id": "yt_pro",
+        "name": "YouTube Premium",
+        "price": 20,
+        "description": "YouTube Premium",
+        "stock": [],
+        "icon": "youtube"
+      }
+    ]
+  },
+  {
+    "id": "bs",
+    "name": "BStation",
+    "icon": "bstation",
+    "items": [
+      {
+        "id": "bs_pro",
+        "name": "BStation Premium",
+        "price": 20,
+        "description": "BStation",
+        "stock": [],
+        "icon": "bstation"
+      }
+    ]
+  }
+]

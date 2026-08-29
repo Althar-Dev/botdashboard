@@ -1,0 +1,109 @@
+{
+    "default": {
+        "placeholder": "📦"
+    },
+    "alightm": {
+        "id": "6219514189690445879",
+        "placeholder": "💥"
+    },
+    "bstation": {
+        "id": "6219513936287377395",
+        "placeholder": "📺"
+    },
+    "capcut": {
+        "id": "6219610044770558599",
+        "placeholder": "🎬"
+    },
+    "duolingo": {
+        "id": "6219916460622358309",
+        "placeholder": "🦉"
+    },
+    "canva": {
+        "id": "6219633370737941559",
+        "placeholder": "🎨"
+    },
+    "canva2": {
+        "id": "6221829623739587987",
+        "placeholder": "🖌️"
+    },
+    "chatgpt": {
+        "id": "6219584068808356078",
+        "placeholder": "💻"
+    },
+    "chatgptb": {
+        "id": "6219724372505010686",
+        "placeholder": "💡"
+    },
+    "claude": {
+        "id": "6219811770794515358",
+        "placeholder": "🧠"
+    },
+    "netflix": {
+        "id": "6219833825451582062",
+        "placeholder": "🎥"
+    },
+    "picsart": {
+        "id": "6219794389061870226",
+        "placeholder": "🖼️"
+    },
+    "spotify": {
+        "id": "6222263299472367458",
+        "placeholder": "🎧"
+    },
+    "remini": {
+        "id": "6219735075563513415",
+        "placeholder": "📷"
+    },
+    "viu": {
+        "id": "6219770663662526464",
+        "placeholder": "🍿"
+    },
+    "primevideo": {
+        "id": "6221829211422728319",
+        "placeholder": "🎞️"
+    },
+    "vidio": {
+        "id": "6219824466717843418",
+        "placeholder": "📹"
+    },
+    "gemini": {
+        "id": "6219959427475185989",
+        "placeholder": "♊"
+    },
+    "grok": {
+        "id": "6219537086161100881",
+        "placeholder": "🚀"
+    },
+    "deepseek": {
+        "id": "6219885588397433334",
+        "placeholder": "🔎"
+    },
+    "blackbox": {
+        "id": "6219605801342870586",
+        "placeholder": "⬛"
+    },
+    "perplexity": {
+        "id": "6219511775918825329",
+        "placeholder": "❓"
+    },
+    "disney": {
+        "id": "6220021708795944910",
+        "placeholder": "🏰"
+    },
+    "pinterest": {
+        "id": "6221824650167460052",
+        "placeholder": "📍"
+    },
+    "figma": {
+        "id": "6219851464882265945",
+        "placeholder": "📐"
+    },
+    "zoom": {
+        "id": "6219685318367387868",
+        "placeholder": "↔️"
+    },
+    "youtube": {
+        "id": "6219515396576256854",
+        "placeholder": "▶️"
+    }
+}
