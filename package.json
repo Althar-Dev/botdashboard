@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "AutoOrder Single Use",
   "main": "index.js",
+  "workspaces": [
+    "web"
+  ],
   "scripts": {
-    "start": "npm --prefix web run start -- -p 9000",
+    "postinstall": "npm --prefix web install",
+    "start": "npm --prefix web run start -- -p 9777",
     "bot": "node index.js",
-    "dev": "npm --prefix web run dev -- -p 9000",
-    "dashboard": "npm --prefix web run dev -- -p 9000",
+    "dev": "npm --prefix web run dev -- -p 9777",
+    "dashboard": "npm --prefix web run dev -- -p 9777",
     "build": "npm --prefix web run build",
-    "web:start": "npm --prefix web run start -- -p 9000"
+    "web:install": "npm --prefix web install",
+    "web:start": "npm --prefix web run start -- -p 9777"
   },
   "dependencies": {
     "@starvale-sdk/svalepay": "^1.1.3",
